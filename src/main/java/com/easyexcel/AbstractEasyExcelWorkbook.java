@@ -35,8 +35,7 @@ public abstract class AbstractEasyExcelWorkbook  implements Workbook {
     public void write(OutputStream stream){
         try {
             ExcelWriter writer = new ExcelWriter(stream, ExcelTypeEnum.XLSX,false);
-            com.alibaba.excel.metadata.Sheet sheet = new com.alibaba.excel.metadata.Sheet(1, 0, StudentInfo.class);
-            sheet.setSheetName("sheet");
+            com.alibaba.excel.metadata.Sheet sheet = new com.alibaba.excel.metadata.Sheet(1, 1, StudentInfo.class, "sheet", null);
             writeSheet(writer, sheet);
             System.out.println("EasyExcel : writesheet() finished! ");
             MemoryHelper.printCurrentMemoryInfo();
