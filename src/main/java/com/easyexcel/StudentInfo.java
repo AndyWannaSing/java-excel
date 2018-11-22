@@ -4,22 +4,22 @@ import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.metadata.BaseRowModel;
 
 public class StudentInfo extends BaseRowModel {
-    @ExcelProperty(index = 0)
+    @ExcelProperty(value ="序号" ,index = 0)
     private String number;
 
-    @ExcelProperty(index = 1)
+    @ExcelProperty(value ="班级" ,index = 1)
     private String className;
 
-    @ExcelProperty(index = 2)
+    @ExcelProperty(value ="姓名" ,index = 2)
     private String name;
 
-    @ExcelProperty(index = 3)
+    @ExcelProperty(value ="年龄" ,index = 3)
     private String age;
 
-    @ExcelProperty(index = 4)
+    @ExcelProperty(value ="性别" ,index = 4)
     private String gender;
 
-    @ExcelProperty(index = 5)
+    @ExcelProperty(value ="专业" ,index = 5)
     private String major;
 
     public String getNumber() {
