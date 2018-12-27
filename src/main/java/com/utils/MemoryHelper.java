@@ -1,5 +1,7 @@
 package com.utils;
 
+import java.util.Date;
+
 /**
  * 获取内存信息的帮助类
  *
@@ -29,7 +31,7 @@ public class MemoryHelper {
                 .append("usedMemory: ").append(parseByteToMBStr(usedMemory))
                 .append("maxMemory: ").append(parseByteToMBStr(maxMemory));
 
-        System.out.println("Current State: " + currentState.toString());
+        System.out.println(new Date() + " —— Current State: " + currentState.toString());
     }
 
     /**
